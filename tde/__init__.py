@@ -13,5 +13,11 @@
 # You should have received a copy of the GNU General Public License
 # along with WDE. If not, see <http://www.gnu.org/licenses/>.
 """ Term Discovery Evaluation tool"""
+from importlib.metadata import version, PackageNotFoundError
 
-__version__ = "2.0.2"
+# __version__ = "2.0.2"
+try:
+    __version__ = version("zerospeech-tde")
+except PackageNotFoundError:
+    # package is not installed
+    __version__ = None
