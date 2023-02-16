@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build-conda:
     name: build-conda
+    runs-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
