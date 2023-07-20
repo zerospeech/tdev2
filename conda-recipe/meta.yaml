@@ -1,5 +1,5 @@
 {% set name = "zerospeech-tde" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/zerospeech-tde-{{ version }}.tar.gz
-  sha256: 4b50a150bdc27cfbe8e798d258867f5ce6281ea43b4ad28eafd8d100fc325235
+  sha256: 83ee52d7b861ccd993590a7de56b2348e7781382b48087a883fd4055d91abdad
 
 build:
   noarch: python
